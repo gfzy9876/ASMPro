@@ -1,5 +1,8 @@
 pluginManagement {
     repositories {
+        mavenLocal {
+            url = uri("./local-plugin-repository")
+        }
         google()
         mavenCentral()
         gradlePluginPortal()

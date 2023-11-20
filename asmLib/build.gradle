@@ -3,18 +3,28 @@ plugins {
     id("com.gradle.plugin-publish") version "1.2.1"
 }
 
-group = "pers.zy.asmtest"
-version = '1.0'
+group = "pers.zy.asmlib"
+version = '1.0.0.beta'
 
 gradlePlugin {
-//    website = ''
-//    vcsUrl = ''
+    website = 'https://github.com/gfzy9876/ASMPro'
+    vcsUrl = 'https://github.com/gfzy9876/ASMPro.git'
     plugins {
         myPlugin {
-            id = 'pers.zy.asmLib'
+            id = 'pers.zy.asmlib'
             displayName = 'asm plugin test'
             description = 'is gfzy9876 asm plugin test'
-            implementationClass = 'pers.zy.asmLib.TestPlugin'
+            tags.addAll('testing', 'integrationTesting', 'compatibility')
+            implementationClass = 'pers.zy.asmlib.TestPlugin'
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            name = 'local'
+            url = '../local-plugin-repository'
         }
     }
 }
