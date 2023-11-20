@@ -1,0 +1,25 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+    id("com.gradle.plugin-publish") version "1.2.1"
+}
+
+group = "pers.zy.asmtest"
+version = '1.0'
+
+gradlePlugin {
+//    website = ''
+//    vcsUrl = ''
+    plugins {
+        myPlugin {
+            id = 'pers.zy.asmLib'
+            displayName = 'asm plugin test'
+            description = 'is gfzy9876 asm plugin test'
+            implementationClass = 'pers.zy.asmLib.TestPlugin'
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
