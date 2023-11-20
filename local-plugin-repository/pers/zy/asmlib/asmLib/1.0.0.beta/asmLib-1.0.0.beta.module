@@ -1,0 +1,122 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "pers.zy.asmlib",
+    "module": "asmLib",
+    "version": "1.0.0.beta",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "asmLib-1.0.0.beta.jar",
+          "url": "asmLib-1.0.0.beta.jar",
+          "size": 2105,
+          "sha512": "4680de18009c1e6624dfa9b9bdf6e2ae9f107908f98b71370e2c8d1b34c38ac6b3ff4a343c038eb446007261432b37355e1b6ebbe20e5d316ca83dd1caf74f6c",
+          "sha256": "7a121ccb05e6926ef30111164335ff7598ffe420e2ffd04bd509a5d8d452030d",
+          "sha1": "bfd34064879cbb98be1a0b517bf6793617e486a2",
+          "md5": "bd6fc655e3ca9d47851321ccbd0a42da"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "asmLib-1.0.0.beta.jar",
+          "url": "asmLib-1.0.0.beta.jar",
+          "size": 2105,
+          "sha512": "4680de18009c1e6624dfa9b9bdf6e2ae9f107908f98b71370e2c8d1b34c38ac6b3ff4a343c038eb446007261432b37355e1b6ebbe20e5d316ca83dd1caf74f6c",
+          "sha256": "7a121ccb05e6926ef30111164335ff7598ffe420e2ffd04bd509a5d8d452030d",
+          "sha1": "bfd34064879cbb98be1a0b517bf6793617e486a2",
+          "md5": "bd6fc655e3ca9d47851321ccbd0a42da"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "asmLib-1.0.0.beta-javadoc.jar",
+          "url": "asmLib-1.0.0.beta-javadoc.jar",
+          "size": 261,
+          "sha512": "78c33125b77fe99a04476a591648658b70f7d39fc1ee678042bb366b7a7f6f8592b965fc8efe46339c4b3fe6edb3b65d0049987f6cd3d9a23e8004febab43bac",
+          "sha256": "dc385733f015d6c291052750cc3a23a1d736a6d8e3111b58c85ae948c9b8ac07",
+          "sha1": "3fe4887a92765bebb8ec26060691bf0ca22a1b00",
+          "md5": "7c229cf317bf28a1e7d78005fc07eec9"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "asmLib-1.0.0.beta-sources.jar",
+          "url": "asmLib-1.0.0.beta-sources.jar",
+          "size": 860,
+          "sha512": "4c6e8799eabc490f24b3d9782041fc9e747703acebe01427478edd018a1c98104480f7ad02385a25651a237b5c2b8f015f39c33ee0f2a24a43215941fd823b9f",
+          "sha256": "8ae808e2b7a3526e867693eea7452ca606720bb326d5e6d415508cb92c52853a",
+          "sha1": "991147c648d5b24859067be792e9384d2898062e",
+          "md5": "8cfa902daa302b7ea1444c48b75ebe9c"
+        }
+      ]
+    }
+  ]
+}
